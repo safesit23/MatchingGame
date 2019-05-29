@@ -79,7 +79,7 @@ function startGame(){
     minute = 0; 
     hour = 0;
     var timer = document.querySelector(".timer");
-    timer.innerHTML = "0 mins 0 secs";
+    timer.innerHTML = "0 นาที 0 วินาที";
     clearInterval(interval);
 }
 
@@ -185,7 +185,7 @@ var timer = document.querySelector(".timer");
 var interval;
 function startTimer(){
     interval = setInterval(function(){
-        timer.innerHTML = minute+"mins "+second+"secs";
+        timer.innerHTML = minute+" นาที  "+second+" วินาที ";
         second++;
         if(second == 60){
             minute++;
