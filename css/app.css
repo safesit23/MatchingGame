@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 html {
 	box-sizing: border-box;
 }
@@ -18,7 +19,7 @@ body {
 
 body {
 	background: #ffffff;
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Kanit', sans-serif;
 	font-size: 16px;
 }
 
@@ -30,7 +31,11 @@ body {
 }
 
 h1 {
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Kanit', sans-serif;
+}
+
+.logo{
+	padding: 20px;
 }
 
 
@@ -172,7 +177,7 @@ h1 {
 	width: 85%;
 	position: relative;
 	transition: all 5s ease-in-out;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Kanit', sans-serif;
 }
   
 .popup h2 {
@@ -219,7 +224,7 @@ h1 {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Kanit', sans-serif;
 	color: #ffffff;
 	border-radius: 5px;
 }
