@@ -177,16 +177,16 @@ function moveCounter(){
     //     }
     // }
     if (moves > 12){
-        stars[0].style.visibility = "collapse";
+        stars[4].style.visibility = "collapse";
     }
     if (moves > 18){
-        stars[1].style.visibility = "collapse";
+        stars[3].style.visibility = "collapse";
     }
-    if (moves > 25){
+    if (moves > 24){
         stars[2].style.visibility = "collapse";
     }
-    if (moves > 30){
-        stars[3].style.visibility = "collapse";
+    if (moves > 29){
+        stars[1].style.visibility = "collapse";
     }
 }
 
