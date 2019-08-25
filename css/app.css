@@ -193,7 +193,7 @@ h1 {
 .popup h2 {
 	margin-top: 0;
 	color: #333;
-	font-family: Tahoma, Arial, sans-serif;
+	font-family: 'Kanit', sans-serif;
 }
 
 .popup .close {
@@ -227,13 +227,14 @@ h1 {
 	display: inline-block;
 }
 
-#play-again {
+.buttoninmodals {
 	background-color: #141214;
 	padding: 0.7rem 1rem;
 	font-size: 1.1rem;
-	display: block;
+	display: inline-block;
 	margin: 0 auto;
-	width: 50%;
+	align-content: center;
+	width: 48%;
 	font-family: 'Kanit', sans-serif;
 	color: #ffffff;
 	border-radius: 5px;
