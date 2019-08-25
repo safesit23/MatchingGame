@@ -162,19 +162,31 @@ function moveCounter(){
         startTimer();
     }
     // setting rates based on moves
-    if (moves > 8 && moves < 12){
-        for( i= 0; i < 3; i++){
-            if(i > 1){
-                stars[i].style.visibility = "collapse";
-            }
-        }
+    // if (moves > 8 && moves < 12){
+    //     for( i= 0; i < 5; i++){
+    //         if(i > 1){
+    //             stars[i].style.visibility = "collapse";
+    //         }
+    //     }
+    // }
+    // else if (moves > 13){
+    //     for( i= 0; i < 5; i++){
+    //         if(i > 0){
+    //             stars[i].style.visibility = "collapse";
+    //         }
+    //     }
+    // }
+    if (moves > 12){
+        stars[0].style.visibility = "collapse";
     }
-    else if (moves > 13){
-        for( i= 0; i < 3; i++){
-            if(i > 0){
-                stars[i].style.visibility = "collapse";
-            }
-        }
+    if (moves > 18){
+        stars[1].style.visibility = "collapse";
+    }
+    if (moves > 25){
+        stars[2].style.visibility = "collapse";
+    }
+    if (moves > 30){
+        stars[3].style.visibility = "collapse";
     }
 }
 
