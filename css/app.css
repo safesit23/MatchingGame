@@ -18,7 +18,7 @@ body {
 }
 
 body {
-	background: #ffffff;
+	background-color: #fffde1;
 	font-family: 'Kanit', sans-serif;
 	font-size: 16px;
 }
@@ -35,7 +35,7 @@ h1 {
 }
 
 .logo{
-	padding: 20px;
+	padding-top: 5px;
 }
 
 
@@ -46,10 +46,10 @@ h1 {
 
 .deck {
 	width: 85%;
-	background: #716F71;
+	background: rgb(36, 50, 126);
 	padding: 1rem;
 	border-radius: 4px;
-	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+	box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.2);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -61,7 +61,7 @@ h1 {
 	height: 3.7rem;
 	width: 3.7rem;
 	margin: 0.2rem 0.2rem;
-	background: #141214;;
+	background: #e3f5ff;
 	font-size: 0;
 	color: #ffffff;
 	border-radius: 5px;
@@ -110,7 +110,7 @@ h1 {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
-	background: #e2043b;
+	background: #dd2452;
 }
 
 .deck .card.disabled {
@@ -126,7 +126,8 @@ h1 {
 
 .score-panel {
 	text-align: left;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	margin-top: 25px;
 }
 
 .score-panel .stars {
