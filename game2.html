@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game: Week2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body oncontextmenu="return false;">
+
+    <div class="container">
+        <header>
+
+            <div class="logo">
+            </div>
+        </header>
+
+        <section class="score-panel">
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+
+            กดไป <span class="moves">0</span> ครั้ง
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+                <i class="fa fa-repeat"></i>
+            </div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="diamond">
+                <img src="./img/U2-01.png">
+            </li>
+            <li class="card" type="plane">
+                <img src="./img/U2-02.png">
+            </li>
+            <li class="card match" type="anchor">
+                <img src="./img/U2-03.png">
+            </li>
+            <li class="card" type="bolt">
+                <img src="./img/U2-04.png">
+            </li>
+            <li class="card" type="cube">
+                IPv4
+            </li>
+            <li class="card match" type="anchor">
+                <img src="./img/U2-03.png">
+            </li>
+            <li class="card" type="leaf">
+                IPv6
+            </li>
+            <li class="card" type="bicycle">
+                <img src="./img/U2-06.png">
+            </li>
+            <li class="card" type="diamond">
+                ISP
+            </li>
+            <li class="card" type="bomb">
+                <img src="./img/U2-07.png">
+            </li>
+            <li class="card" type="leaf">
+                128 bits
+            </li>
+            <li class="card" type="bomb">
+                <img src="./img/U2-07.png">
+            </li>
+            <li class="card open show" type="bolt">
+                <img src="./img/U2-05.png">
+            </li>
+            <li class="card" type="bicycle">
+                <img src="./img/U2-06.png">
+            </li>
+            <li class="card" type="plane">
+                <img src="./img/U2-02.png">
+            </li>
+            <li class="card" type="cube">
+                32 bits
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Matching Game 2 | สรุปผล </h2>
+                <a class="close" href=#>×</a>
+                <div class="content-2">
+                    <p>จำนวนการกด <span id=finalMove> </span> ครั้ง </p>
+                    <p>ใช้เวลาไป <span id=totalTime> </span> </p>
+                    <p>RATING : <span id=starRating></span></p>
+                </div>
+                <button class="buttoninmodals" onclick="playAgain()">
+                    เล่นใหม่อีกครั้ง
+                </button>
+                <a href="index.html"><button class="buttoninmodals">
+                    กลับสู่หน้าหลัก
+                </button></a>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
