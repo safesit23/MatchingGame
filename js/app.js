@@ -176,7 +176,7 @@ function moveCounter(){
     //         }
     //     }
     // }
-    if (moves > 12){
+    if (moves > 13){
         stars[4].style.visibility = "collapse";
     }
     if (moves > 18){
