@@ -17,9 +17,7 @@
 
     <div class="container">
         <header>
-
-            <div class="logo">
-            </div>
+            <div class="logo">Matching Game : Week4</div>
         </header>
 
         <section class="score-panel">
@@ -34,7 +32,9 @@
             กดไป <span class="moves">0</span> ครั้ง
             <div class="timer">
             </div>
-
+            <div class="restart" style="padding: 0px 10px;">
+                <a href="index.html" style="color: black"><i class="fa fa-home"></i></a>
+            </div>
             <div class="restart" onclick=startGame()>
                 <i class="fa fa-repeat"></i>
             </div>
@@ -100,9 +100,9 @@
                     <p>ใช้เวลาไป <span id=totalTime> </span> </p>
                     <p>RATING : <span id=starRating></span></p>
                 </div>
-                <button class="buttoninmodals" onclick="playAgain()">
-                    เล่นใหม่อีกครั้ง
-                </button>
+                <a href="game1.html"><button class="buttoninmodals">
+                        เล่นใหม่อีกครั้ง
+                    </button></a>
                 <a href="index.html"><button class="buttoninmodals">
                         กลับสู่หน้าหลัก
                     </button></a>
