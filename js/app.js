@@ -176,10 +176,10 @@ function moveCounter(){
     //         }
     //     }
     // }
-    if (moves > 14){
+    if (moves > 16){
         stars[4].style.visibility = "collapse";
     }
-    if (moves > 19){
+    if (moves > 20){
         stars[3].style.visibility = "collapse";
     }
     if (moves > 24){
